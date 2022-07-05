@@ -26,137 +26,59 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="time" class="lead"></p>
     </header>
-    <div class="container">
+    <div class="container-fluid">
       <!-- Timeblocks go here -->
-     <table>
-      <tr>
-        <th class="col-1">9:00</th>
-        <td class="col-10">
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div> 
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr>
-      <tr>
-        <th class="col-1">10:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr>
-      <tr>
-        <th class="col-1">11:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">12:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">13:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">14:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">15:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">16:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">17:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">18:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">19:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr> <tr>
-        <th class="col-1">20:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr>
-      <tr>
-        <th class="col-1">21:00</th>
-        <td class="col-10">
-           <div class="input-group input-group-lg">
-            <input type="text" class="form-control input-lg"/>
-          </div>  
-        </td>
-        <td class="col-1">
-          <button class="saveBtn">💾</button>
-      </tr>
-     </table> 
-    </div>
+      <div id="9oc" class="row time-block">
+        <div class="col-md-1 hour">9:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>
+      <div id="10oc" class="row time-block">
+        <div class="col-md-1 hour">10:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+      <div id="11oc" class="row time-block">
+        <div class="col-md-1 hour">11:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+      <div id="12oc" class="row time-block">
+        <div class="col-md-1 hour">12:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+      <div id="13oc" class="row time-block">
+        <div class="col-md-1 hour">13:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+      <div id="14oc" class="row time-block">
+        <div class="col-md-1 hour">14:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+      <div id="15oc" class="row time-block">
+        <div class="col-md-1 hour">15:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+      <div id="16oc" class="row time-block">
+        <div class="col-md-1 hour">16:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+      <div id="17oc" class="row time-block">
+        <div class="col-md-1 hour">17:00</div>
+        <textarea class="col-md-10 description"></textarea>
+        <button class="col-md-1 saveBtn">💾</button>
+      </div>  
+  </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="../Develop/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
